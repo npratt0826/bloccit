@@ -1,0 +1,14 @@
+ <h1>All Posts</h1>
+ <div class="container">
+  <h3> <%= link_to "Add Advertisement", new_advertisement_path %> </h3>
+ </div>
+ <% @advertisements.each do |ad| %>
+   <div class="media">
+     <div class="media-body">
+       <h4 class="media-heading">
+         <%= link_to ad.title, ad %>
+       </h4>
+     </div>
+   </div>
+   
+ <% end %>
