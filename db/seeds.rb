@@ -1,13 +1,6 @@
  require 'random_data'
  
-15.times do
-   SponsoredPost.create!(
-     title:         RandomData.random_sentence,
-     body:  RandomData.random_paragraph,
-     price: 5
-   )
- end
-15.times do
+  15.times do
    Topic.create!(
      name:         RandomData.random_sentence,
      description:  RandomData.random_paragraph
@@ -38,6 +31,5 @@
  
  puts "Seed finished"
  puts "#{Topic.count} topics created"
- puts "#{SponsoredPost.count} Sponsored posts created"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
