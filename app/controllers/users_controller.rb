@@ -18,4 +18,12 @@ class UsersController < ApplicationController
             render :new
         end
     end
+    
+    def confirm
+        @user = User.create(params[:user])
+        unless @user.valid?
+            render :action => :new
+        else
+        end
+    end
 end
