@@ -1,0 +1,28 @@
+
+<div class="media">
+   <div class="media-body">
+       <div>
+           
+       </div>
+        <% current_user.favorites.each do |f| %>
+        <div class="col-md-4">
+        <h4>
+            <%= link_to f.post.title %> 
+        </h4>
+        <small> 
+            favorited <%= time_ago_in_words(f.created_at) %> ago 
+        </small>
+        </div>
+        <div style="float: left;">
+           <%= image_tag f.post.user.avatar_url(48) %>
+           <%= f.post.votes.count %> votes
+           <%= f.post.comments.count %> comments
+       </div>
+   </div>
+   <div>
+   </div>
+   <% end %>
+ </div>
+ 
+ 
+ 

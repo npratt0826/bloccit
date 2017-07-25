@@ -31,4 +31,4 @@
  <% end %>
  
 <h2> Favorited Posts </h2>
-<%= current_user.favorites %>
+<%= render partial: 'favorites/favorites', locals: { post: @post } %>
