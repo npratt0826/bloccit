@@ -4,7 +4,7 @@ PostUp is a Ruby on Rails application that allows users to create topics and pos
 
 The app is deployed on Heroku: 
 
-The source code is here on GitHub:
+The source code is here on GitHub: https://github.com/npratt0826/postup
 
 # Features
 
